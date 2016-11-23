@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aqua.meterconverterexampleapp.MainActivity"
+    android:background="@mipmap/ruler">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+android:gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:id="@+id/inputET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter in meters"/>
+
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputET"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radiogroupRG">
+
+    <RadioButton
+        android:text="Kilometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000ff"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:id="@+id/kilometerRB" />
+
+        <RadioButton
+            android:text="Meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:layout_above="@+id/kilometerRB"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:id="@+id/meterRB" />
+
+        <RadioButton
+            android:text="Inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:layout_above="@+id/kilometerRB"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:id="@+id/inchRB" />
+
+        <RadioButton
+            android:text="Feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:textSize="25sp"
+            android:layout_above="@+id/kilometerRB"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:id="@+id/feetRB" />
+    </RadioGroup>
+
+    <TextView
+        android:text="TextView"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTV"
+        android:layout_below="@+id/radiogroupRG"
+
+         />
+
+
+</RelativeLayout>
